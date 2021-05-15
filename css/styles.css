@@ -180,7 +180,6 @@ body {
 
 .features-list {
   display: flex;
-  align-items: center;
 }
 
 .section {
@@ -202,6 +201,7 @@ body {
 
 .features-item {
   margin-right: 30px;
+  max-width: 270px;
 }
 
 /* Чем мы занимаемся */
