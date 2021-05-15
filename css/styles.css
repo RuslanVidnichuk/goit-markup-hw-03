@@ -6,6 +6,7 @@
   --accent-color: #2196f3;
   --header-logo-color: #000;
   --header-line-color: #ececec;
+  --portfolio-cards-border-color: #eeeeee;
 }
 
 /*=====Полный сброс некоторых дефолтных значений===*/
@@ -285,25 +286,62 @@ img {
 /* Фильтр */
 .filter-list {
   list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.portfolio-list {
+  list-style: none;
+}
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter-item {
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   background-color: var(--secondary-background-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
   cursor: pointer;
 }
+
+.filter-list > .filter-list-item + .filter-list-item {
+  margin-left: 8px;
+}
+
 .filter-item:hover,
 .filter-item:focus {
   color: var(--primary-background-color);
   background-color: var(--accent-color);
 }
+
+.filter-list-item {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
 /* Галерея */
 .portfolio-list {
   list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
+
+.portfolio-item {
+  margin-top: 30px;
+  margin-left: 30px;
+  max-width: 370px;
+}
+
 .item-header {
   font-size: 18px;
   line-height: 2;
@@ -313,6 +351,18 @@ img {
   line-height: 1.87;
   color: var(--secondary-text-color);
 }
+
+.item-header {
+  margin-bottom: 4px;
+}
+
+.portfolio-list .portfolio-item-top {
+  padding: 20px 24px;
+  border-right: 1px solid var(--portfolio-cards-border-color);
+  border-bottom: 1px solid var(--portfolio-cards-border-color);
+  border-left: 1px solid var(--portfolio-cards-border-color);
+}
+
 /* Футер */
 .footer {
   background-color: #2f303a;
