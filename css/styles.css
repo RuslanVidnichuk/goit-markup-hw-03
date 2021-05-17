@@ -10,6 +10,11 @@
 }
 
 /*=====Полный сброс некоторых дефолтных значений===*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 h1,
 h2,
@@ -27,10 +32,11 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 body {
-  font-family: "Roboto", "Raleway", "Oleo Script", sans-serif;
+  font-family: 'Roboto', 'Raleway', 'Oleo Script', sans-serif;
   font-style: normal;
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
@@ -47,7 +53,7 @@ body {
 
 /*=====Хедер===*/
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
@@ -140,15 +146,11 @@ body {
 }
 
 .hero-button {
-  display: inline-block;
   border: none;
   min-width: 200px;
-  height: 50px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
   color: var(--primary-background-color);
   background-color: var(--accent-color);
@@ -210,9 +212,7 @@ body {
   margin-bottom: 50px;
 }
 .work-list {
-  list-style: none;
   display: flex;
-  padding-left: 0px;
 }
 
 .work-list .work-item + .work-item {
@@ -227,10 +227,6 @@ body {
 .work-item {
   display: list-item;
   text-align: -webkit-match-parent;
-}
-
-img {
-  display: block;
 }
 
 /* Наша команда */
@@ -264,13 +260,10 @@ img {
 }
 
 .my-team-item {
-  text-align: center;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  display: list-item;
-  text-align: -webkit-match-parent;
 }
 
 .my-team-item .card-inf {
@@ -290,10 +283,6 @@ img {
   padding-left: 0;
   margin-bottom: 50px;
   justify-content: center;
-}
-
-.portfolio-list {
-  list-style: none;
 }
 
 .portfolio {
@@ -322,14 +311,8 @@ img {
   background-color: var(--accent-color);
 }
 
-.filter-list-item {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
 /* Галерея */
 .portfolio-list {
-  list-style: none;
-  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
